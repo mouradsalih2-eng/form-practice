@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>form-practice</title>
+</head>
+
+<body>
+    <section class="wrapper-main">
+        <form action="https://mouradsalih2-eng.github.io/Frisky-Practice2/friskay.html" method="post">
+            
+            <div class="form-row">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" placeholder="password" required minlength="8" maxlength="16">
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="18" max="99">
+            </div>
+
+            <div class="form-row">
+                <label for="bday">Birthday</label>
+                <input type="date" id="bday" name="bday" required>
+            </div>
+
+            <div class="form-row">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Username" required pattern="[A-Za-z0-9]{5,15}">
+            </div>
+
+            <div class="form-row">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name" required pattern="[A-Za-z\s]{3,30}">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-row">
+                <label class="main-label">Gender:</label>
+                <div class="options-container">
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="other"> Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label class="main-label">Hobbies:</label>
+                <div class="options-container">
+                    <label class="option-item">
+                        <input type="checkbox" name="hobby[]" value="reading"> Reading
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="hobby[]" value="writing"> Writing
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="hobby[]" value="coding"> Coding
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="hobby[]" value="gaming"> Gaming
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="hobby[]" value="traveling"> Traveling
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Select Country</option>
+                    <option value="USA">United States of America</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Write your message here:</label>
+                <textarea name="message" id="message" cols="40" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

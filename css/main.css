@@ -97,3 +97,34 @@ button {
 button:hover {
     background: #5568d3;
 }
+/* Remove the border from the very last section */
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+form h2 {
+    font-size: 20px;
+    color: #131313; /* Matches your theme color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 700;
+     /* Optional: Add a little line under the title text */
+    padding-bottom: 10px;
+    width: 100%
+}
+.form-section h3 {
+    font-size: 18px;
+    color: #667eea; /* Matches your theme color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+    /* Optional: Add a little line under the title text */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    display: inline-block; /* Makes the border only as wide as the text */
+    width: 100%;
+}
